@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>cartesianmeditations</title>
+<!-- 2017-02-08 Wed 11:36 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">cartesianmeditations</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. First meditation</a></li>
+<li><a href="#sec-2">2. Second meditation</a>
+<ul>
+<li><a href="#sec-2-1">2.1. 12</a></li>
+<li><a href="#sec-2-2">2.2. 13</a>
+<ul>
+<li><a href="#sec-2-2-1">2.2.1. Helen's question</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-3">2.3. 14</a></li>
+<li><a href="#sec-2-4">2.4. 15</a>
+<ul>
+<li><a href="#sec-2-4-1">2.4.1. Clementine's question</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-5">2.5. 16</a></li>
+<li><a href="#sec-2-6">2.6. 17</a></li>
+<li><a href="#sec-2-7">2.7. 18</a></li>
+<li><a href="#sec-2-8">2.8. 19</a></li>
+<li><a href="#sec-2-9">2.9. 20</a></li>
+<li><a href="#sec-2-10">2.10. 21</a></li>
+<li><a href="#sec-2-11">2.11. 22</a>
+<ul>
+<li><a href="#sec-2-11-1">2.11.1. What are cognitive structures?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Third meditation</a>
+<ul>
+<li><a href="#sec-3-1">3.1. 23</a></li>
+<li><a href="#sec-3-2">3.2. 24</a></li>
+<li><a href="#sec-3-3">3.3. 25</a></li>
+<li><a href="#sec-3-4">3.4. 26</a></li>
+<li><a href="#sec-3-5">3.5. 27</a></li>
+<li><a href="#sec-3-6">3.6. 28</a>
+<ul>
+<li><a href="#sec-3-6-1">3.6.1. Class discussion</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-7">3.7. 29</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Fourth Meditation</a>
+<ul>
+<li><a href="#sec-4-1">4.1. 31: The ego as identical pole of the subjective processes</a></li>
+<li><a href="#sec-4-2">4.2. 33: The Full Concretion of the Ego as monad and the problem of his self-constitution</a>
+<ul>
+<li><a href="#sec-4-2-1">4.2.1. Class discussion</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-3">4.3. 34</a></li>
+<li><a href="#sec-4-4">4.4. 35</a>
+<ul>
+<li><a href="#sec-4-4-1">4.4.1. Question: what does Husserl have in mind by the world "psychology?"</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-5">4.5. 36</a></li>
+<li><a href="#sec-4-6">4.6. 37</a></li>
+<li><a href="#sec-4-7">4.7. 38: Active and passive genesis</a></li>
+<li><a href="#sec-4-8">4.8. 39: Association as a principle of passive genesis</a></li>
+<li><a href="#sec-4-9">4.9. 40</a></li>
+<li><a href="#sec-4-10">4.10. 41</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. Fifth Meditation</a>
+<ul>
+<li><a href="#sec-5-1">5.1. 42</a></li>
+<li><a href="#sec-5-2">5.2. 43</a></li>
+<li><a href="#sec-5-3">5.3. 44</a></li>
+<li><a href="#sec-5-4">5.4. 45</a></li>
+<li><a href="#sec-5-5">5.5. 47</a></li>
+<li><a href="#sec-5-6">5.6. 48</a></li>
+<li><a href="#sec-5-7">5.7. 49</a></li>
+<li><a href="#sec-5-8">5.8. 50</a></li>
+<li><a href="#sec-5-9">5.9. 51</a></li>
+<li><a href="#sec-5-10">5.10. 52</a></li>
+<li><a href="#sec-5-11">5.11. 53</a></li>
+<li><a href="#sec-5-12">5.12. 57</a>
+<ul>
+<li><a href="#sec-5-12-1">5.12.1. Class discussion</a></li>
+</ul>
+</li>
+<li><a href="#sec-5-13">5.13. 58</a></li>
+<li><a href="#sec-5-14">5.14. 59</a></li>
+<li><a href="#sec-5-15">5.15. 60</a></li>
+<li><a href="#sec-5-16">5.16. 61</a></li>
+<li><a href="#sec-5-17">5.17. 62</a></li>
+<li><a href="#sec-5-18">5.18. 63</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> First meditation</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Upon examining the concept of evidence we find an unnecessary assumption on which empirical inquiry stands
+</li>
+<li>To be a true cartesian skeptic, one must be skeptical of this assumption which has its seat prior to science and formal logic
+</li>
+<li>Percieving and recognizing come before the processes of formal logic and empiral evidence
+</li>
+<li>Sense-data are not apodictic (unshakeable)
+</li>
+<li>To the reflective (philosophical) ego, the thinking (aphilosophical) ego is a phenomena
+</li>
+<li>Epoche: abstention from making qualifications of unknowns made possible by the transcendental ego
+</li>
+</ul>
+<p>
+performing the epoche is being seriously skeptical
+</p>
+<ul class="org-ul">
+<li>The transcendental (philosophical) ego alone is capable of performing the epoche
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Second meditation</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+General thoughts: It seems like in the first meditation we brought ourselves all the way down to solipsism and now we are trying to return to the world again but in a way radically different from that of Descartes. The first things we find in the transcendental realm are structural commonalities like extention and time. These are radically opposed to the things that Descartes seems to find (God, for example).
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> 12</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Is the transcendental ego the ego for whom consciousness if foreign, or for whom the world is foreign?
+</li>
+<li>The transcendental ego is "prior to the order of knowledge to all objective being"
+</li>
+<li>What would be "evidence for the existence of the manifold data of transcendental experience?" (pg. 28 p. 2) Would it be the mere presence of our capability to alienate ourselves from our own conscious expereince at all?
+</li>
+<li>He lists as evidences: recollection and retention
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> 13</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>Two stages to proceed:
+<ol class="org-ol">
+<li>real accessible to transendetla self-experience must be explored (pg 29 p. 2)
+</li>
+<li>criticism of the transcendental self experience (pg 29 p 3)
+</li>
+</ol>
+</li>
+<li>Transcendental science must be totally unlike the "positive object science" we speak of (pg. 30)
+</li>
+<li>Husserl seeks a "science whose thematic object exists whether or not the world exists" (pg. 30)
+</li>
+<li>Descartes has "neglected &#x2026; to direct his attention to the fact that the ego can explicate himself ad infintum and therefore lie ready as a <i>field</i> of work" (pg. 31 p 2)
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-2-2-1" class="outline-4">
+<h4 id="sec-2-2-1"><span class="section-number-4">2.2.1</span> Helen's question</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+Helen's question: Descartes failed to see how the transcendental ego could wander freely and distance itself infinitely far away from the aphilosophical ego, the crude ego who cannot see its own reverse. Descartes discovered the transcendental ego, but fails to utilize its mobility.
+</p>
+
+<p>
+We've never had a moment of conscious experience without looking through the lens of our ego, so how would we even <i>think</i> a third-person perspective on such a thing? Certainly we can, and so there exists a field in which the ego itself becomes an object of study.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> 14</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>psychology parallels the transcendental study of consciousness, but they are separate (pg. 32)
+</li>
+<li>psychology and transcendental phenomenology are totalyl similar except that the latter the data are "not taken to be psychic components of the man." (pg. 32 midway)
+</li>
+<li>They (psychological data) are not taken as actuality, but instead mere "phenomenal-actuality" (pg. 32 end of p. 1)
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> 15</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>structures: grasping, percieving, remembering, predicating, valuing, purposing. (pg. 33 at bottom)
+</li>
+<li>The transcendental ego does not "posit" and therefore does not believe anything (pg. 34)
+</li>
+<li>The phenomenologically altered ego's attitude consists in a "splitting of the ego" (pg. 35 p. 2) and becomes a "disinterested onlooker" (pg. 35 p. 2)
+</li>
+<li>The phenom. ego's "sole interest is to see and describe adequatly what he sees" (pg. 35 p. 2) i.e. without prejudice towards any particular modes of being
+</li>
+<li>Naturalness is a phenomenological attitude + "belief in the world" (pg. 36)
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-2-4-1" class="outline-4">
+<h4 id="sec-2-4-1"><span class="section-number-4">2.4.1</span> Clementine's question</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<p>
+Husserl seeks an a priori objectivity which, so far, is arrived at not by consensus but but being a "disinterested onlooker" at ourselves and the world. The objective world is retained as an objective-phenomenal-world. Here, Husserl find two "sides:" noematic and noetic, each of which reveal apodictially "objective" modes of being: being past present and future (pg. 36), as well as the noetic side: perception, recollection and retention (pg. 36). These "modes of consciousness" are the phenomenal "objects" and they are objective insofar as they exist as "singular or universal descrtiptions" (pg. 37 at bottom) produced by the "disinterested onlooker".
+</p>
+
+<ul class="org-ul">
+<li>Husserl goes beyond cognitive structures also into modes of being: certainly being, possibly being, presumably being, and being past, being present, being future. (pg. 36)
+</li>
+<li>There "modes" are "noematic" (pg. 36 p. 2) and there are "noetic" modes as well: perception, recollection, retention.
+</li>
+<li>We "have not lost the world" in phenomenology, only changed out attitude towards it (pg. 36 p. 3)
+</li>
+<li>We "retain it qua cogitatum" (pg. 36)
+</li>
+<li>When we perform the epoche, the noetic side reveals "the openly endless life of pure consciousness" (pg. 37 p. 1) and on the noematic side the "the mean world" (pg. 37 p. 1)
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> 16</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>There are an infinite number of "concrete processes" (pg. 37 at bottom)
+</li>
+<li>"sensualism" is wrong insofar as it begins with interpreting conscious life as a "complex of external data" (pg. 38 p. 2)
+</li>
+<li>Husserl thinks that prior to any sense data are the structures of consciousness: "I percieve &#x2013; the house", "I remember &#x2013; the house" etc. (pg. 39 p. 1)
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> 17</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>External objects appear in two ways: on the one hand the die's shape and color, and on the other hand the perspective we have of the die (pg. 40 p. 1)
+</li>
+<li>Objects of transcendental inspection "have a definite noetic-noematic composition" (pg. 40 bottom p. 1)
+</li>
+<li>Facts are disclosed at this point: "facts of synthetic structure" (pg. 41 at top)
+</li>
+<li>Consciousness unites the noetic and noematic (e.g. a possbile present) ina synthesis (pg. 41 at top)
+</li>
+<li>In essence, objects do not arrive to us through our senses but rather we must first construct them somehow. How?
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-7" class="outline-3">
+<h3 id="sec-2-7"><span class="section-number-3">2.7</span> 18</h3>
+<div class="outline-text-3" id="text-2-7">
+<ul class="org-ul">
+<li>continuous flow of internal time is fundamental to all other syntheses (pg. 41 bottom)
+</li>
+<li>We must differentiate internal time from its appearence
+</li>
+<li>The die that appears before me has its continuity ("self-dentity" pg 41.) only by a "synthesis of modes of consciousness" (41)
+</li>
+<li>This makes knowing and identity possible
+</li>
+<li>One object can be that of many modes of consciousness (pg. 42 at top)
+</li>
+<li>Self-identity or continuity of objects somes as the result of an internal synthesis (pg. 42 p. 2)
+</li>
+<li>Contradictions and "incompatibilities" are themselves products of synthesis (pg. 42 p. 3)
+</li>
+<li>Internal time and its appearence are distinct (43 middle)
+</li>
+<li>Consciousness is comprised of internal temporality which is comprised of consciousness. Here there is a difficult paragraph (43 end)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-8" class="outline-3">
+<h3 id="sec-2-8"><span class="section-number-3">2.8</span> 19</h3>
+<div class="outline-text-3" id="text-2-8">
+<ul class="org-ul">
+<li>Objects are products of synthesis, and formulating of a single possibility by the synthetic consciousness
+</li>
+<li>Objects are not data since they have horizons: "every subjective process has a process 'horizon'" (44, p. 2)
+</li>
+<li>"every perception has a horizon of the past, a potentiality of awakenable reflections" (44 bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-9" class="outline-3">
+<h3 id="sec-2-9"><span class="section-number-3">2.9</span> 20</h3>
+<div class="outline-text-3" id="text-2-9">
+<ul class="org-ul">
+<li>The ego is capable of imaging phenomena from multiple perspectives. This is made possible through the multitude of modes of consciousness
+</li>
+<li>"The only radical form of psychology consists in the pure development of an intentional psychology." (pg. 49 p 1)
+</li>
+<li>Here is the meat of 20: "in spite of the lack of ultimate relationships characterizing processes of consciousness &#x2026; intentional analysis remains legitimate because &#x2026; a necessary conformity to type prevails and can be apprehended" (pg. 40. bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-10" class="outline-3">
+<h3 id="sec-2-10"><span class="section-number-3">2.10</span> 21</h3>
+<div class="outline-text-3" id="text-2-10">
+<ul class="org-ul">
+<li>The most universal type is the ego - cogito - cogitatum. (50 at top)
+</li>
+<li>The intentional object is  "transcendental clue" (50 p. 1) which points to the definite ways in which consciousness tructures phenomal experience
+</li>
+<li>The ego - cogito constructs the cogitatum through some sort of  synthetic process by which one possibility is selected as <i>actuality</i> from an infinite multitude of candidates
+</li>
+<li>Possible modes are always "subdivided into types:" (pg 50 middle) "possible perception, retention, and recollection, expectation, intending sas symbolized, and intuitive representation." (50 middle)
+</li>
+<li>The "task of transcendental theory is to systematically explicate [these] types" (51 bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-11" class="outline-3">
+<h3 id="sec-2-11"><span class="section-number-3">2.11</span> 22</h3>
+<div class="outline-text-3" id="text-2-11">
+<ul class="org-ul">
+<li>"the consituting multiplicites of consciousness &#x2026; belong together for essential reasons" (53 bottom)
+</li>
+<li>Every "objective object points to a <i>structure</i>" (53 bottom) which is governed by a rule
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-2-11-1" class="outline-4">
+<h4 id="sec-2-11-1"><span class="section-number-4">2.11.1</span> What are cognitive structures?</h4>
+<div class="outline-text-4" id="text-2-11-1">
+<p>
+Husserl does not refer to cognitive structures but noetic and noematic structures.
+</p>
+
+<p>
+Cognitive structures are the apparent types by which actual phenomena are selected from potential (candidate) phenomena.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Third meditation</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> 23</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>the predicates being and non-being relate to the "meant" portion of things revealed by the epoche. (pg. 56 middle)
+</li>
+<li>the predicates truth and falsity relate to the "pure meaning" portion revealed by the epoche. (pg. 56 middle)
+</li>
+<li>"meant" objects exist when the synthesis which produces them have the quality of verification (pg. 57 top)
+</li>
+<li>Reason is an "all-embracing necessary structural form belonging to all transcendental subjectivity" (pg. 57 middle)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> 24</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>evidence consists of that which is "self-appearance, self-exhibiting, self-giving" or that which is "itself there" (pg. 57 bottom)
+</li>
+<li>so evidence is what for descartes was the heat of the fire: an uncontrollable, felt experience
+</li>
+<li>"all evidence is experience in a maximally broad, and yet eseentially unitary self" (pg. 57 bottom)
+</li>
+<li>evidence always "gives its object originaliter" (pg. 58 top)
+</li>
+<li>non-being is a modality of ebing (pg. 58 p. 2)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> 25</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>phantasy is "as-if actuality" (pg. 58 p. 3)
+</li>
+<li>modes of consciousness can be either "positional" or "quasi-positioninal" (pg. 69. p. 1)
+</li>
+<li>Making claer is making evident (pg. 59 middle)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> 26</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>Important title: Actuality is the correlate of evident verification
+</li>
+<li>Reminder: evidence is a state of affairs which correspond exactly to a judgement
+</li>
+<li>Formal logic has phenomenological foundations
+</li>
+<li>Formal logical concepts, like the modes, offer us clues to the structure of consciousness
+</li>
+<li>"universal conformity to the structure of laws on the part of consciousness" (pg. 59 bottom)
+</li>
+<li>This regularity is reserved for truth and actuality (pg 59 bottom)
+</li>
+<li>We should look to truth and actuality not as parts of the world but merely as correspondences of various structures and modes of consciousness
+</li>
+<li>"that objects exist for me says nothing about evidence; only that objects are intended for me as the 'certainly believing'" (pg. 59 bottom)
+</li>
+<li>"every imaginable adequations has in us its ultimate transcendental bases" (pg. 60)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> 27</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>Husserl can "always return" to the "itself-beheld" (pg. 60 p. 2)
+</li>
+<li>"the particular evidence does not yet produce for us any abiding being" (pg. 60 last line)
+</li>
+<li>"every truth is a truth in-itself" (pg. 61 p. 1)
+</li>
+<li>Hegel's "in-itself" means "merely potential" and "unreflective:" "no determination with other things, no negation" (UCSD Hegel Glossary)
+</li>
+<li>Husserl himself calls them "certain potentialities"
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6"><span class="section-number-3">3.6</span> 28</h3>
+<div class="outline-text-3" id="text-3-6">
+<ul class="org-ul">
+<li>There is always the possibility that "the belief in being remains unfulfilled; that what exists in-itself does not exist or is different" (pg. 62 top)
+</li>
+<li>External experience verifies object only through "harmonious synthesis" (pg. 62 p. 1)
+</li>
+<li>Wolrd-consciousness "bears within itself world &#x2013; and indeed actually existing world" (pg. 62 p. 1)
+</li>
+<li>Form stack exhange philosophy: "we could say that horizons are the structures of thought through which we have environment where there are objects at all"
+</li>
+<li>"A world itself is an infinity of harmoniously combinable experiences &#x2013; an idea that is the correlate of perfect experiential evidence" (pg. 62 p. 2)
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-3-6-1" class="outline-4">
+<h4 id="sec-3-6-1"><span class="section-number-4">3.6.1</span> Class discussion</h4>
+<div class="outline-text-4" id="text-3-6-1">
+<ul class="org-ul">
+<li>Horizons are always infinite, even after restricted
+</li>
+<li>The unimaginable are things that are contradictions by definition.
+</li>
+<li>Experience flows in the sense that our experience isn't "choppy": we don't see still images.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-7" class="outline-3">
+<h3 id="sec-3-7"><span class="section-number-3">3.7</span> 29</h3>
+<div class="outline-text-3" id="text-3-7">
+<ul class="org-ul">
+<li>"actuality existing object indicates a system of evidences which relate to this object" (pg. 63 top)
+</li>
+<li>Naive ontological component concepts: "real space", "real time", "real causality", "real physical thing", "real property") (pg. 64 last line)
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Fourth Meditation</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> 31: The ego as identical pole of the subjective processes</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>I think therefore I am
+</li>
+<li>The is the "active subject of consciousness" and constitutes a second kind of synthesis (pg. 66 p. 1)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> 33: The Full Concretion of the Ego as monad and the problem of his self-constitution</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>The ego in "full concreteness" is "monad" (pg. 69 last line)
+</li>
+<li>The "monadically conrete ego" include "the whole of actual and potential conscious life" (pg. 68 p. 3)
+</li>
+<li>The phenomenology of self-conscious is the phenomenology as a whole (pg. 68 p. 3)
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-4-2-1" class="outline-4">
+<h4 id="sec-4-2-1"><span class="section-number-4">4.2.1</span> Class discussion</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<p>
+Two levels:
+</p>
+<ol class="org-ol">
+<li>experience (synthesized)
+</li>
+<li>experience of experience (synthesized)
+</li>
+</ol>
+<p>
+Ego has both #1 and #2
+</p>
+
+<p>
+Experiencing phenomena restricts the possible horizon.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> 34</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>Our perception of ourself is permanent but only as the byproduct of a stream of experiences which all center around the Me
+</li>
+<li>Individuals are embodiements of the properties of consciousness
+</li>
+<li>The cartesion project "[leads us] back into [our] transcendental ego" (pg. 69 middle)
+</li>
+<li>"every fact can be thought of merely as exmplifying a pure possibility" (pg. 71 top)
+</li>
+<li>eidetic: relating to or denoting mental images having unusual vividness and detail, as if actually visible.
+</li>
+<li>Phenomenology expores the "universal apriori" necessary for constituting the imaginable (pg. 72 top)
+</li>
+<li>Husserl intends to develop a strictly "eidetic phenomenology"
+</li>
+<li>The uncovering is scientific only by going back to apdocitic principles layed out in the previous sections
+</li>
+<li>"The science of pure possibilities precedes the science of actualities" (pg. 72 bottom)
+</li>
+<li>"eidetic intuition is the fundamental form of all particular transcendental methods" (pg. 72 bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> 35</h3>
+<div class="outline-text-3" id="text-4-4">
+</div><div id="outline-container-sec-4-4-1" class="outline-4">
+<h4 id="sec-4-4-1"><span class="section-number-4">4.4.1</span> Question: what does Husserl have in mind by the world "psychology?"</h4>
+</div>
+</div>
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> 36</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li>Eidetic phenomenology is the new reformulation of the phenomenological method
+</li>
+<li>Eidetic reduction: Descarte's piece of wax: it feels one way until it melts but it is still the same wax
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-6" class="outline-3">
+<h3 id="sec-4-6"><span class="section-number-3">4.6</span> 37</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li>"the universal apriori is an eidetic form" (pg. 74 top)
+</li>
+<li>The original phenomenology is static insofar as its "descriptions are like that of natural history" (pg. 76 bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-7" class="outline-3">
+<h3 id="sec-4-7"><span class="section-number-3">4.7</span> 38: Active and passive genesis</h3>
+<div class="outline-text-3" id="text-4-7">
+<ul class="org-ul">
+<li>Constitutibe gensis is divided into two types: active and passive (pg. 77 middle)
+</li>
+<li>Active: the ego is productively consituted. Here lies "practical reason"&#x2013;including logic (pg. 77 middle)
+</li>
+<li>e.g. in counting, the number is constituted, in dividing, the part is constituted
+</li>
+<li>for the ego its habituality is actively constituted here
+</li>
+<li>these habits become naturalized when there is some consensus on their existence (pg. 78 top)
+</li>
+<li>"the ready-made object (a hammer) is given (synthesize) in passive experience" (pg. 78 middle)
+</li>
+<li>Passive: unreflected synthesis "governed by eidetic laws" (pg. 79 middle)
+</li>
+<li>On inspection, passive syntheses of the ego are shown to be active after all
+</li>
+<li>Thanks to passive synthesis, the "ego always has a world of objects" at its disposal (pg. 79 bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-8" class="outline-3">
+<h3 id="sec-4-8"><span class="section-number-3">4.8</span> 39: Association as a principle of passive genesis</h3>
+<div class="outline-text-3" id="text-4-8">
+<ul class="org-ul">
+<li>Objects given prior to the products of activity are to be said made by "association" (pg. 80 middle)
+</li>
+<li>For Husserl, children do not learn by association but through a passive activity of their ego which constitutes things (this is one of his main issues with psychology)
+</li>
+<li>Those associations of psychology are "naturalistic distortions" of the corresponding genuine concept (pg. 80 middle)
+</li>
+<li>BIG: Intentionality structures both things about the thoughts about the things simultaneously. Children constitute the objects they encounter and those objects become "existent" when they persist through eidetic reduction.
+</li>
+<li>Activities are the thoughts about the things and passivities are the eidetic experiences. They persist through eidetic reduction for unknown reasons.
+</li>
+<li>Associations are conformities "not to emperical laws but eidetic laws" (pg. 81 top)
+</li>
+<li>Associations "designate a realm of the innate-apriori" (pg. 81 top)
+</li>
+<li>The ego come to the fro as what it really is now: "an infinite nexus of synthetically congruous performances" (pg. 81 top)
+</li>
+<li>"fact itself is a structural concept within the system of the conrete apriori" (pg. 81 middle)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-9" class="outline-3">
+<h3 id="sec-4-9"><span class="section-number-3">4.9</span> 40</h3>
+<div class="outline-text-3" id="text-4-9">
+<ul class="org-ul">
+<li>Phenomenology: "the static and genetic constitution of objectivites of possible consciousness" (pg. 81 bottom)
+</li>
+<li>"intentionality as a fundamental property of my psychic life is a real property belonging to me  and every other man" (pg. 82 top)
+</li>
+<li>That I can "constitute compelling evidences" is understandable, but how these evidences attain "objective significance" is a huge problem (pg. 82 bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-10" class="outline-3">
+<h3 id="sec-4-10"><span class="section-number-3">4.10</span> 41</h3>
+<div class="outline-text-3" id="text-4-10">
+<ul class="org-ul">
+<li>The problem of objectivity "is inconsistent" (pg. 83 top)
+</li>
+<li>"descartes missed the genuine sense of his reduction into the indubitable" (pg. 83 top)
+</li>
+<li>As a natrual man "I have already construed an Outside Me" (pg. 83 middle)
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Fifth Meditation</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> 42</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>The goal here is to allow for intersubjectivity without abandoning <i>radical doubt</i>.
+</li>
+<li>He does not want to embark on "metaphysical hypotheses" (pg. 90 p. 2)
+</li>
+<li>We are instead to explore "in what syntheses the sense 'other ego' becomes fashioned in me"
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> 43</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>despite the transcendental reduction, we "experience the world (including others) as an intersubjective world, actually there for everyone, accessible in respect of its Objects" (pg. 91 p. 2)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> 44</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>"otherness eminates from others" (pg. 92 bottom)
+</li>
+<li>"the other is a mirror of my own ego" (pg. 94 middle)
+</li>
+<li>"Nature" in science is an abstraction (pg. 96 bottom)
+</li>
+<li>My self is the only object in my "abstract world-stratum to which I ascribe fields of sensation" (pg. 97 top)
+</li>
+<li>I find bodies by "reducing other men to what is included in my ownness" (pg. 97 bottom)
+</li>
+<li>Thus we find other through a process of abstraction similar to that of science, but totally based on abstraction of my own kinaesthetic perceptions
+</li>
+<li>"the psychic life of my ego is wholly unaffected by the screening off of what is other" (pg. 98 bottom)
+</li>
+<li>i.e. the concept of otherness withstands the trascnendental reduction
+</li>
+<li>if we can show that "the reduce world belonged to the concrete essence of the constituting subject as an inseparable internal determination, the ego would find himself as a member among the world's externalities" (pg. 99 p. 1)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-4" class="outline-3">
+<h3 id="sec-5-4"><span class="section-number-3">5.4</span> 45</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>We continue in a sort of "mundanizing self-apperception" (pg. 99 bottom)
+</li>
+<li>Husserl finds an apodicticlly continuous self experience constituted as "all-embracing apodictic apriori" (pg. 103 middle)
+</li>
+<li>"every explication of egological data participates: as a certain evidence contained in the recollection of my own past" (pg. 103 middle)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-5" class="outline-3">
+<h3 id="sec-5-5"><span class="section-number-3">5.5</span> 47</h3>
+<div class="outline-text-3" id="text-5-5">
+<ul class="org-ul">
+<li>My ego "comprises constituted unities - but with a restriction: where and so far as the constituted unity is inseperable form the original constitutioin itself" (pg. 103 bottom)
+</li>
+<li>Human others are incapable of being appercieved like usual objects and so constitute a special blind spot
+</li>
+<li>"the ego has a universe of what is particularly his own" (pg. 104 bottom)
+</li>
+<li>^ this is apodictic ^
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-6" class="outline-3">
+<h3 id="sec-5-6"><span class="section-number-3">5.6</span> 48</h3>
+<div class="outline-text-3" id="text-5-6">
+<ul class="org-ul">
+<li>"not all my own modes of consciousness are self-consciousness" (pg. 105 middle)
+</li>
+<li>The primordial sphere are all of the objects that form my immediate and "given" world (pg. 105)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-7" class="outline-3">
+<h3 id="sec-5-7"><span class="section-number-3">5.7</span> 49</h3>
+<div class="outline-text-3" id="text-5-7">
+<ul class="org-ul">
+<li>Ego form ego-communities which all constitute one identical Ego. (pg. 107 middle)
+</li>
+<li>^ This is what is revealed to consciousness ^
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-8" class="outline-3">
+<h3 id="sec-5-8"><span class="section-number-3">5.8</span> 50</h3>
+<div class="outline-text-3" id="text-5-8">
+<ul class="org-ul">
+<li>The ego itself is never there "in person" (pg. 109 top)
+</li>
+<li>if it were, it would be subsumed into "my own experience" (pg. 109 top)
+</li>
+<li>"a certain mediation of intentionality must be present here" (pg. 109 p. 1)
+</li>
+<li>Here we find "appresentation:" a "making co-present" (pg. 109 p. 1)
+</li>
+<li>Appresentation also occurs with objects, since when we see them from the front we also synthesize a necessary backside (pg. 109 p. 2)
+</li>
+<li>Experienceinth the other cannot be mere appresentation because we never have a "fulfilling presentation" of the Ego. (pg. 109 p. 2)
+</li>
+<li>In other words, we cannot get around back of people's souls
+</li>
+<li>Another man enters: a body is presented, still a mere part of myself. In order for it to appear animate, a apperceptive transfer must take place between "my own objects" and the body presented. (pg. 110 bottom)
+</li>
+<li>This must occur in a way which prevents that Ego form being subsumed into my own. (pg. 111 top)
+</li>
+<li>Similarity between bodies is the basis for the apperceptive transfer (pg. 111 p. 1)
+</li>
+<li>Every apperception points back to a "primal instituting" (pg. 111 p. 2)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-9" class="outline-3">
+<h3 id="sec-5-9"><span class="section-number-3">5.9</span> 51</h3>
+<div class="outline-text-3" id="text-5-9">
+<ul class="org-ul">
+<li>"pairing is a primal form of passive synthesis" (pg. 112 bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-10" class="outline-3">
+<h3 id="sec-5-10"><span class="section-number-3">5.10</span> 52</h3>
+<div class="outline-text-3" id="text-5-10">
+<ul class="org-ul">
+<li>How does this apperceptive transfer actually take place?
+</li>
+<li>It is a "primordially unfulfillable experience" (pg. 114 bottom)
+</li>
+<li>Only by an, uncanny if you will, behavior can I accept the Other as genuine consciousness (pg. 114 middle)
+</li>
+<li>"only by nature of its changing but harmonious behavior" can an apperceptive transfer take place (pg. 114 p. 3)
+</li>
+<li>it "becomes a pseudo organism precisely because there is something discordant about its behavior" (pg. 114 p. 3)
+</li>
+<li>There remains a "verifiable accessibility of what is not originall accessible" (pg. 114 p. 4)
+</li>
+<li>This is how something can be synthesizes which does not seem to belong to me
+</li>
+<li>Apperceptive transfer takes place when something in both primodially unfulfillabel AND yet is verifiable. (pg. 115 top)
+</li>
+<li>In this way a synthesized object may show itself to be a "modificatum" (pg. 116) of my self.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-11" class="outline-3">
+<h3 id="sec-5-11"><span class="section-number-3">5.11</span> 53</h3>
+<div class="outline-text-3" id="text-5-11">
+<ul class="org-ul">
+<li>I do not perceive the ego as being a "duplicate" of myself (pg. 117 middle)
+</li>
+<li>This poses a phenomenological problem?
+</li>
+<li>Instead, I appearcieve the Other Ego as having modes <i>like</i> mine, not identical.
+</li>
+<li>Another clue is the "here" and "there." When the transfer takes place we can percieve ourselves as if from the "there." (pg. 117 bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-12" class="outline-3">
+<h3 id="sec-5-12"><span class="section-number-3">5.12</span> 57</h3>
+<div class="outline-text-3" id="text-5-12">
+<ul class="org-ul">
+<li>Communities have "transcendental intersubjectivity" (pg. 130)
+</li>
+<li>"Every analysis produced by phenomenology can be produced in the natural realm" (pg. 131 p. 3)
+</li>
+<li>"trasposed to transcendental naiteve we find pure psychology" (pg. 131 p. 3)
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-5-12-1" class="outline-4">
+<h4 id="sec-5-12-1"><span class="section-number-4">5.12.1</span> Class discussion</h4>
+<div class="outline-text-4" id="text-5-12-1">
+<p>
+Cartesian foundation is apodictally true.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-5-13" class="outline-3">
+<h3 id="sec-5-13"><span class="section-number-3">5.13</span> 58</h3>
+<div class="outline-text-3" id="text-5-13">
+<ul class="org-ul">
+<li>Acts of the ego "react into the other Ego through the medium of appresentative experience of someone else" (pg. 132 top)
+</li>
+<li>This constitutes an intersubjective lifeworld or "pool of percieving" (wikipedia)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-14" class="outline-3">
+<h3 id="sec-5-14"><span class="section-number-3">5.14</span> 59</h3>
+<div class="outline-text-3" id="text-5-14">
+<ul class="org-ul">
+<li>Naive ontology (of the 18th century) "attempts to draw <i>directly from concrete intuition</i> in order to build a priori sciences" (pg. 138 top)
+</li>
+<li>We must "built again with a new originariness and not interpreted merely sequaciously as already definitive" (pg. 138 bottom)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-15" class="outline-3">
+<h3 id="sec-5-15"><span class="section-number-3">5.15</span> 60</h3>
+<div class="outline-text-3" id="text-5-15">
+<ul class="org-ul">
+<li>"two worlds of monads are incompossible just as two possible variants of my ego are incompossible" (pg. 141 p. 1)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-16" class="outline-3">
+<h3 id="sec-5-16"><span class="section-number-3">5.16</span> 61</h3>
+<div class="outline-text-3" id="text-5-16">
+<ul class="org-ul">
+<li>How does the child come into his psychic life?
+</li>
+<li>Un-assuming the natural attitude is like a "copernican revolution" (p. 144 top)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-17" class="outline-3">
+<h3 id="sec-5-17"><span class="section-number-3">5.17</span> 62</h3>
+<div class="outline-text-3" id="text-5-17">
+<ul class="org-ul">
+<li>The objection: "the whole step leading to other subjectivity and Objectivity is possible only by virtue of an unacknowledged metaphysics, a concealed adoption of Leibnizian traditions."
+</li>
+<li>No, we never abandoned the epoche or the transcendental attitude
+</li>
+<li>"penomenology does nothing but explicate the sense this world has for us all, prior to any philosophizing" (pg. 151 p. 1)
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-5-18" class="outline-3">
+<h3 id="sec-5-18"><span class="section-number-3">5.18</span> 63</h3>
+<div class="outline-text-3" id="text-5-18">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2017-02-08 Wed 11:36</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
